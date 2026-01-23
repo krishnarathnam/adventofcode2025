@@ -7,7 +7,7 @@ int main() {
   std::ifstream file("./input/day1.txt");
 
   if (!file) {
-    std::cerr << "Error opening file" << std::endl;
+    std::cerr << "Error opening file" << '\n';
     return 1;
   }
 
@@ -18,19 +18,20 @@ int main() {
   while (std::getline(file, line)) {
     // i++;
     char c = line[0];
-    int d = std::stoi(line.substr(1));
-    if (c == 'R')
-      sum += d;
-    else
-      sum -= d;
-    if (sum == 0 || (sum % 100 == 0)) {
-      sum = 0;
+    int d = 0;
+    for (size_t t = 1; t < line.size(); t++) {
+      d = d * 10 + (line[t] - '0');
+    }
+
+    sum += (c == 'R') ? d : -d;
+
+    if ((sum % 100 == 0)) {
       count++;
     }
     std::cout << line << " Direction: " << c << " Degree: " << d
-              << " sum: " << sum << std::endl;
+              << " sum: " << sum << '\n';
   }
 
-  std::cout << count << std::endl;
+  std::cout << count << '\n';
   return 0;
 }
