@@ -11,6 +11,7 @@ int main() {
     return 1;
   }
 
+  int a = 19;
   std::string line;
   int count = 0;
   int sum = 50;
@@ -21,7 +22,7 @@ int main() {
       d = d * 10 + (line[t] - '0');
     }
 
-    sum += (c == 'R') ? d : -d;
+   sum += (c == 'R') ? d : -d;
 
     if ((sum % 100 == 0)) {
       count++;
