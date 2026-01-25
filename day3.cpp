@@ -7,10 +7,8 @@ int main() {
   std::ifstream file("./input/day3.txt");
   std::string line;
   std::vector<int> res;
-  int n1, n2 = INT_MIN;
   int sum = 0;
   while (std::getline(file, line)) {
-    std::cout << line << std::endl;
     int largest = INT_MIN;
     int num = 0;
     for (int i = 0; i < line.size() - 1; i++) {
