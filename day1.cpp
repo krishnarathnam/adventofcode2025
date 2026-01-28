@@ -22,7 +22,7 @@ int main() {
       d = d * 10 + (line[t] - '0');
     }
 
-   sum += (c == 'R') ? d : -d;
+    sum += (c == 'R') ? d : -d;
 
     if ((sum % 100 == 0)) {
       count++;
@@ -32,5 +32,4 @@ int main() {
   }
 
   std::cout << count << '\n';
-  return 0;
 }
