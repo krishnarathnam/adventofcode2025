@@ -43,15 +43,5 @@ int main() {
       }
     }
   }
-
-  for (auto x : forklift) {
-    for (auto element : x) {
-
-      std::cout << element << " ";
-    }
-
-    std::cout << "\n";
-  }
-
   std::cout << sum << "\n";
 }
