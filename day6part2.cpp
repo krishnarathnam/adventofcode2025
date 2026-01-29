@@ -3,7 +3,7 @@
 #include <vector>
 
 int main() {
-  std::ifstream file("./input/day6part2.txt");
+  std::ifstream file("./input/day6.txt");
   std::vector<std::vector<long long>> matrix;
   std::vector<char> oper;
   if (!file) {
