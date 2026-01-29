@@ -4,7 +4,7 @@
 #include <vector>
 
 int main() {
-  std::ifstream file("./input/day6.txt");
+  std::ifstream file("./input/day6_demo.txt");
   std::vector<std::vector<long long>> matrix;
   std::vector<char> op;
   if (!file) {
