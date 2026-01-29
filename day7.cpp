@@ -3,7 +3,7 @@
 #include <vector>
 
 int main() {
-  std::ifstream file("./input/day7.txt");
+  std::ifstream file("./input/day7_demo.txt");
   std::string line;
   std::vector<std::vector<char>> matrix;
   int sPosition;
