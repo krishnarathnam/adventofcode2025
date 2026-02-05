@@ -4,7 +4,7 @@
 #include <vector>
 
 int main() {
-  std::ifstream file("./input/day7.txt");
+  std::ifstream file("../input/day7.txt");
   if (!file)
     return 0;
 
