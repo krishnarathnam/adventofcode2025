@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -5,7 +6,7 @@
 #include <vector>
 
 int main() {
-  std::ifstream file("./input/day5.txt");
+  std::ifstream file("../input/day5part2.txt");
   std::string line;
   std::vector<std::pair<long long, long long>> range;
   std::vector<long long> avail;
